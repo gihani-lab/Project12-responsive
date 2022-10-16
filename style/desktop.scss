@@ -1,83 +1,116 @@
+body {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-style: normal;
+  font-weight: 400;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Mulish", sans-serif;
-  gap: 90px;
   background-color: black;
-  width: 1440px;
-  height: 810px;
+  width: 90%;
+  max-width: 864px;
+  margin: 0 32px;
 }
 
 header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-image {
+    font-family: "Baloo";
+    font-size: 24px;
+    letter-spacing: -0.25px;
+    color: #ffffff;
+    width: 90px;
+  }
   .navbar {
     display: flex;
     align-items: center;
-    width: 1110px;
     font-size: 14px;
-    &__image {
-      flex-grow: 1;
-    }
+    min-width: 303px;
+    display: flex;
+
     &__navlist {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
-      list-style: none;
-      gap: 30px;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      margin-left: 10px;
 
       li a {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        line-height: 22px;
         text-decoration: none;
-        line-height: 23px;
-        letter-spacing: -0.346154px;
-        color: aliceblue;
+        color: #ffffff;
       }
     }
   }
 }
 main {
-  margin-top: 64px;
-  width: 320px;
+  width: 100%;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
-  .headline {
+  justify-content: center;
+  flex-wrap: wrap;
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     &__title {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      flex-wrap: wrap;
       align-items: center;
+      max-width: 574px;
+      width: 100%;
+      margin: 0 20px;
       &__header {
         font-family: "Poppins";
-        font-style: normal;
         font-weight: 500;
         font-size: 84px;
         line-height: 102px;
-        /* identical to box height, or 121% */
-
         letter-spacing: -2px;
-
         color: #ffffff;
-        width: 265px;
-        height: 102px;
         margin: 0px;
       }
       &__text {
+        display: flex;
+        flex-wrap: wrap;
         font-family: "Source Sans Pro";
-        font-style: normal;
         font-weight: 400;
         font-size: 22px;
         line-height: 34px;
-        /* or 155% */
-
+        justify-content: center;
         text-align: center;
-
         color: #ffffff;
-        width: 574px;
-        height: 68px;
-        margin-top: 27px;
       }
+    }
+    &__image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    .navbar {
+      display: none;
     }
   }
 }

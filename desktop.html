@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/desktop.css">
     <title>Document</title>
 </head>
@@ -15,11 +16,13 @@
     <div class="container">
         <!--navbar begins-->
         <header>
-            <nav class="navbar">
-                <div class="navbar__image">
+            <div class="header-image">
 
-                    <img src="images/Head.svg" alt="logo">
-                </div>
+                Head.
+
+            </div>
+            <nav class="navbar">
+
                 <ul class="navbar__navlist">
                     <li><a href="./products.html">Works</a></li>
                     <li><a href="./customers.html">Services</a></li>
@@ -28,18 +31,23 @@
             </nav>
         </header>
         <main>
-            <section class="headline">
-                <div class="headline__title">
-                    <h3 class="headline__title__header">
+            <section class="content">
+                <div class="content__title">
+                    <h3 class="content__title__header">
                         Japan
                     </h3>
-                    <p class="headline__title__text">
+                    <p class="content__title__text">
                         Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
                         vitae ullamcor.
                     </p>
                 </div>
-                <div class="headline__image">
-                    <img src="images/Bitmap.png" alt="asinger">
+                <div class="content__image">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="./images/image-m.png">
+                        <source media="(max-width: 1000px)" srcset="./images/image-t.png">
+                        <source media="(min-width: 1001px)" srcset="./images/image-d.png">
+                        <img src="images/image-m.png" alt="">
+                    </picture>
                 </div>
             </section>
         </main>

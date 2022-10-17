@@ -27,9 +27,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
-  width: 90%;
   max-width: 864px;
-  margin: 0 32px;
 }
 
 header {
